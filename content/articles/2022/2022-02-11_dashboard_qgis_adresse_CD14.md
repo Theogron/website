@@ -159,13 +159,13 @@ Ci-dessous, nous avons organisé la table avec une fenêtre par ligne comme suit
 
 ### Exemple de requêtes utilisées
 
-1- total de la somme des valeurs de la colonne pt_total de la couche Infos Communes
+1- Total de la somme des valeurs de la colonne pt_total de la couche Infos Communes
 
 ```sql
 aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total)
 ```
 
-2- total de la somme des valeurs de la collonne pt_total des entités sélectionnées sur la couche Infos Communes
+2- Total de la somme des valeurs de la collonne pt_total des entités sélectionnées sur la couche Infos Communes
 
 ```sql
 aggregate(layer:= 'Infos Communes', aggregate:='sum', expression:=pt_total, filter:=is_selected('Infos Communes', $currentfeature )  )
